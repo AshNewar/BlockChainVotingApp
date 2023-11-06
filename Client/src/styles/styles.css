@@ -1,0 +1,219 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 4rem;
+    background-color: rgb(49, 49, 49);
+    height: 100vh;
+
+}
+.connect-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.acc-para{
+    font-size: .8rem;
+}
+.sidebar-menu{
+    display: none;
+}
+.side-link{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+}
+.basic{
+    height: 100vh;
+    background-color: rgb(215, 212, 208);
+    color: rgb(79, 77, 77);
+}
+.reg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-data{
+    padding: 1rem;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60vw;
+
+}
+.result-box{
+    display: flex;
+}
+
+
+.voter-card{
+    width: 10rem;
+    height: max-content;
+    background-color: rgb(109, 132, 227);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    align-items: center;
+    color: rgb(235, 229, 229);
+    gap: 1rem;
+    cursor: pointer;
+}
+.voter-pics{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: max-content;
+    overflow-y: scroll;
+}
+.pop-up{
+    /* display: none;  */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+}
+.d-flex{
+    display: flex;
+}
+.d-none{
+    display: none;
+}
+.pop-up-card{
+    width: 15rem;
+    height: 19rem;
+    overflow: hidden;
+    position: relative;
+}
+.card-select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: .5rem;
+    background-color: rgb(92, 118, 219);
+
+    padding: 1rem;
+}
+.card-select div{
+    display: flex;
+    justify-content: space-between;
+}
+.close {
+    position: absolute;
+    left: 14rem;
+    top: -3px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .pro-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .pro-2{
+    display: flex;
+    justify-content: center;
+align-items: center;
+gap: 10px;
+padding:  1.5rem 1rem;
+border-radius: 5px;
+background-color: rgb(85, 86, 87);
+color: white;
+
+
+  }
+  .profile-pics{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width:630px) {
+    /* .pro-2{
+        display: flex;
+        flex-direction: column;
+    } */
+    .profile-pics{
+        width: 80px ;
+        height: 80px;
+    }
+    .pro-2 div{
+        font-size: .8rem;
+    }
+    .form-data{
+        width: 100%;
+      }
+      .side-link{
+        font-size: 0.8rem;
+    
+        }
+    
+  }
+  @media screen and (max-width:525px) {
+    .sidebar{
+        display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+
+
+    }
+    
+    .sidebar-menu{
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+        color: rgb(54, 52, 52);
+    }
+    .app{
+        display: flex;
+        height: 100vh;
+    }
+    .register{
+        margin-top:1rem ;
+        width: 100vw;
+    }
+    
+  }

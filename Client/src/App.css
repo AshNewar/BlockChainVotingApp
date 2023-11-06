@@ -1,0 +1,20 @@
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  padding: 0.8em 1rem;
+  cursor: pointer;
+  background-color: rgb(65, 97, 225);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.menu-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
